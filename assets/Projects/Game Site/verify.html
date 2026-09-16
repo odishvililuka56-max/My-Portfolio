@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Account - GameShop</title>
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-logo">G</div>
+            <h1>Enter Your Account</h1>
+            <p class="verify-subtitle">Select the account you want to log into</p>
+            <form id="verify-form">
+                <div class="form-group">
+                    <label for="verify-account">Account Name</label>
+                    <input type="text" id="verify-account" placeholder="Letters only (A-Z, a-z)" pattern="^[a-zA-Z]+$" title="Account name must contain only letters" required>
+                </div>
+                <div class="form-group">
+                    <label for="verify-password">Password</label>
+                    <input type="password" id="verify-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn-submit">Login</button>
+            </form>
+            <p class="verify-link"><a href="login.html">Create new account</a></p>
+        </div>
+    </div>
+
+    <script src="assets/javascript/auth.js"></script>
+</body>
+</html>
