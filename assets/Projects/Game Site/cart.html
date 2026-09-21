@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - GameShop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/auth.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo" title="Go to homepage">G</a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <div class="header-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">☀️</span>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                    </ul>
+                </nav>
+                <div id="user-profile"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart">
+            <div class="container">
+                <h2>Your Cart</h2>
+                <div id="cart-items">
+                </div>
+                <div id="cart-total">
+                    <p>Total: $<span id="total-price">0.00</span></p>
+                    <button class="btn" id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 GameShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
